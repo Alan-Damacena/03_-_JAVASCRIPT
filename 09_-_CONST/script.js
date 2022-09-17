@@ -9,16 +9,13 @@ No Javascript tem 3 palavras-chaves para declarar variáveis:
 -> const
 */
 
-//DECLARAÇÃO DE VARIÁVEIS
-var a,b,c,nome,sobrenome;
-
-//ATRIBUIÇÃO DOS VALORES
-var a=5;
-var b=5;
-var c=a+b;
-var nome = "Alan";
-var sobrenome = "Damacena";
-var NomeCompleto = nome + " " + sobrenome;
+//ATRIBUIÇÃO DAS VARIÁVEIS
+const a=5;
+const b=5;
+const c=a+b;
+const nome = "Alan";
+const sobrenome = "Damacena";
+const NomeCompleto = nome + " " + sobrenome;
 
 //CHAMANDO AS VARIÁVEIS
 alert(c);
