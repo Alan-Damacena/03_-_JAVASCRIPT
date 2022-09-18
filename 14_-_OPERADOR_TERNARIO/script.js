@@ -15,10 +15,11 @@ São separados em 6 categorias:
 
 */
 
-var valor1, valor2, total;
+var idade, eleitor;
 
-valor1 = "Alan ";
-valor2 = "Damacena";
-total = valor1 + valor2;
+idade = 18;
 
-alert(total)
+// ? (Se essa condição for verdadeira retorna ....) : (Se essa condição for falsa retorna ...)
+eleitor = (idade <18) ? "Não, ele não é eleitor!!!" : "Sim, ele é eleitor!!!"
+
+alert("A resposta é: " + eleitor + " A idade dele é de " + idade + " anos.")

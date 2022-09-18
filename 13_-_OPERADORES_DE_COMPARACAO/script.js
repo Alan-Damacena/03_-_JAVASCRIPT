@@ -15,8 +15,6 @@ São separados em 6 categorias:
 
 */
 
-//Os Operadores de Atribuição nada mais é do que atribuir um valor a uma variável por meio do sinal de igual (=)
-
 var valor1, valor2, total, total2, total3, total4, total5, total6, total7, total8, total9;
 
 valor1 = 8;
