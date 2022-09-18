@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULADORA DO ALAN</title>
+</head>
+<body>
+
+    <h2 class="titulo">CALCULADORA: ALAN DAMACENA</h2>
+
+    <input type="number" name="n1" id="n1" placeholder="Primeiro número"> <!---placeholder serva para colocar um texto dentro da caixa de texto-->
+    <input type="submit" value="+" id="btn_soma" onclick="soma()">
+    <input type="number" name="n2" id="n2" placeholder="Segundo número">
+    <p id="resultado">Resultado:</p>
+
+</body>
+
+<script>
+
+    function soma(){
+
+        document.getElementById("resultado").innerHTML = "Resultado: "
+        
+        var n1 = Number(document.getElementById("n1").value);
+        var n2 = Number(document.getElementById("n2").value);
+
+        // var op = document.getElementById("btn_soma").value;
+
+        var resultado = n1 + n2
+
+        //INNER HTML é o formato de texto que esta sendo selecionado
+        document.getElementById("resultado").innerHTML += resultado
+    }
+
+</script>
+
+</html>

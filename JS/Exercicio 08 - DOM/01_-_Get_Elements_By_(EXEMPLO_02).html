@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container" id="container">
+
+        <p class="text" id="p1">
+            Título
+        </p>
+        <div class="forms" id="forms">
+
+            <input type="text" name="name" id="name" placeholder="Nome" value="Alan">
+
+            <input type="text" name="age" id="age" placeholder="Idade">
+
+        </div>
+
+    </div>
+
+    <script>
+
+        let name = document.getElementById("name")
+
+        let user_name = document.getElementById("name").value 
+
+        console.log("Elemento name:", name)
+
+        console.log("Valor do elemento name:",user_name)
+
+    </script>
+    
+</body>
+</html>

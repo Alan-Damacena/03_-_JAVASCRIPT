@@ -1,0 +1,35 @@
+<!---QUERYSELECTORALL(): retorna todos os elementos com base no seletor CSS passado. Caso nõ haja um seletor, retorna null-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p class="teste">Minha página</p>
+
+    <p class="teste">Teste DOM</p>
+    
+    <div class="teste" id="div_id" name="teste_nome" >
+
+        <input type="text" name="nome" id="nome">
+
+        <input type="button" value="Teste" id="btn_id" class="teste_btn">
+
+    </div>
+
+</body>
+
+<!---depois que fechar a tag <body> declarar o script--->
+<script>
+
+    //querySelectorAll(): retorna TODOS os elementos com base no seletor CSS passado. Caso não haja um seletor, retorna null
+    var elementos = document.querySelectorAll(".teste")
+
+</script>
+
+</html>

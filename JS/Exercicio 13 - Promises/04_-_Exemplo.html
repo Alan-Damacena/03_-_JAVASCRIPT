@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="principal">
+
+        <input type="text" id="nome" placeholder="Nome">
+        <input type="text" id="email" placeholder="Email">
+        <input type="password" id="senha" placeholder="Senha">
+        <input type="password" id="confirma" placeholder="Confirmar senha">
+        <input type="submit" id="enviar" value="Cadastrar" onclick="cadastrar()">
+
+        <p id="resultado"></p>
+
+    </div>
+    
+</body>
+
+    <script>
+
+        function exibir(mensagem){
+
+            document.getElementById("resultado").innerHTML = mensagem
+        }
+
+        function cadastrar(){
+
+            let cadastro = new Promise(
+
+            function(sucesso, erro){
+
+                //ontendo valores nos campos
+                let nome = document.getElementById("nome").value
+
+                let email = document.getElementById("email").value
+
+                let senha = document.getElementById("senha").value
+
+                let confirma = document.getElementById("confirma").value
+
+                //verificando se há campos vazios e retornando erro
+                if(!nome || !email || !senha || !confirma){
+
+                    erro("Não são permitidos campo em branco")
+
+                    //verificando se senha são iguais e retornando erro
+                } else if(senha != confirma){
+
+                    erro("Senhas não conferem")
+
+                    //retorna mensagem de sucesso
+                } else{
+
+                    sucesso("Usuário cadastrado")
+
+                }
+           
+            }
+
+            ).then(
+
+            //chamando a função para mensagem de sucesso
+            function (mensagem) {
+
+                exibir(mensagem)
+
+            },
+
+            //chamando a função para mensagem de erro
+            function (err){
+
+                exibir(err)
+
+            }
+            )
+
+        }
+
+    </script>
+
+</html>

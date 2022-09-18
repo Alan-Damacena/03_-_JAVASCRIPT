@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Replace Child (substituindo)</title>
+</head>
+<body>
+
+    <div id="main">
+
+        <h1 id="title"> Olá Mundo! </h1>
+
+        <p id="text"> ALAN FELIPE MIGUEL DAMACENA</p>
+    
+    </div>
+
+    <button type="button" onclick="replace()">Substituir</button>
+
+    <script>
+
+        function replace(){
+
+            //Pegar o elemento pai
+            let pai = document.getElementById("main");
+
+            //Dentro do elemento pai eu pego o elemento p
+            let old_text = document.getElementById("text")
+
+            //Colocando um elemento novo atrás do outro
+            // No caso, criando uma tag P
+            let new_text = document.createElement("p")
+
+            //Criando um novo conteúdo a tag criada
+            let new_content = document.createTextNode('REALIZADA A TROCA')
+
+            //Unindo a tag ao texto criado
+            new_text.appendChild(new_content)
+
+            //FAZENDO AS SUBSTITUIÇÕES: DE UM POR OUTRO
+            pai.replaceChild(new_text,old_text)
+
+        }
+
+    </script>
+    
+</body>
+</html>

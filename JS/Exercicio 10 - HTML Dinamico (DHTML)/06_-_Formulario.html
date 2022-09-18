@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+
+    <div id="titulo">Formulário</div>
+
+    <form action="" id="formulario">
+
+        <input type="text" name="name" id="nome" placeholder="Informe seu nome">
+
+        <input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome">
+
+        <input type="email" name="email" id="email" placeholder="Email">
+
+        <input type="password" name="senha" id="senha" placeholder="Senha">
+
+        <input type="password" name="confirma_senha" id="confirma_senha" placeholder="Confirmar senha">
+
+        <input type="submit" value="Enviar" name="enviar" id="enviar">
+
+    </form>
+
+    <div id="rodape"></div>
+
+    <script>
+
+        document.getElementById('formulario').addEventListener("submit", registrar)
+
+        function registrar(){
+
+            //Obtendo os valores dos campos
+            let nome = document.getElementById("nome").value
+            let sobrenome = document.getElementById("sobrenome").value
+            let email = document.getElementById("email").value
+            let senha = document.getElementById("senha").value
+            let confirma_senha = document.getElementById("confirma_senha").value
+
+            //Verificando se há algum capo em branco
+            if( nome == "" || sobrenome == "" || email == "" || senha == "" || confirma_senha == "" ){
+
+                //criando o elemento com a mensagem em caso de campo vazio
+                var vazio = document.createElement("p")
+
+
+                //inserindo o texto no elemento
+                vazio.innerHTML = "ALAN, existem campos vazios que precisam ser preenchidos"
+
+                //obtendo o elemento anterior
+                var rodape = document.getElementById("rodape")
+
+                //inseriando a mensagem antes do elemento anterior (rodape)
+                document.body.insertBefore(vazio,rodape)
+
+            }
+
+        }
+    </script>
+    
+</body>
+</html>

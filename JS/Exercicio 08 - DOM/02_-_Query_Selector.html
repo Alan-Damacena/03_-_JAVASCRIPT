@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p class="teste">Minha página</p>
+
+    <p class="teste">Teste DOM</p>
+    
+    <div class="teste" id="div_id" name="teste_nome" >
+
+        <input type="text" name="nome" id="nome">
+
+        <input type="button" value="Teste" id="btn_id" class="teste_btn">
+
+    </div>
+
+</body>
+
+<!---depois que fechar a tag <body> declarar o script--->
+<script>
+
+    //querySelector(): retorna o PRIMEIRO elemento com base no seletor CSS passado como parâmetro. Caso não haja um seletor, retorna null
+                                         //traz toda a estrutura do elemento id
+    var elemento = document.querySelector("#div_id") //# significa ID dentro do seletor CSS
+
+
+    var elemento = document.querySelector(".teste") // O ponto repesenta classes, e essa operação pega a primeira classe com o nome teste
+
+</script>
+
+</html>

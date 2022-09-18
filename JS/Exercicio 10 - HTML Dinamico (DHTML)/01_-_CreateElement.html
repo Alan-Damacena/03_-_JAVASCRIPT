@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="header">
+
+        <button id="btn"> Clique aqui </button>
+
+    </div>
+
+    <script>
+
+        //Criando novo elemento de forma dinâmica
+        var btn = document.getElementById("btn").addEventListener("click", function(){
+
+            //Criando um novo elemento "p"
+            var element = document.createElement("p")
+
+            //Inserindo texto no elemento p
+            element.innerHTML = "ALAN"
+
+            //obtendo a div onde o elemento será inserido
+            var inserirNaDiv = document.getElementById("header")
+
+            //colocando um nó filho dentro de um nó pai
+            //Ele insere o novo texto dentro de um campo específico, no caso a DIV HEADER
+            document.body.appendChild(element,inserirNaDiv)
+
+        })
+
+    </script>
+    
+</body>
+</html>
