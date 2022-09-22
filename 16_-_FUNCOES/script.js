@@ -8,6 +8,7 @@ Pode ser encontrado como "mini-programas" projetados para fazer uma tarefa que v
 Uma função javascript é executada quando "algo" a invoca (chama-a).
 */
 
+//EXEMPLO01
 //DECLARANDO UMA FUNÇÃO DE SOMA
 function soma(valor1,valor2){
     return valor1 + valor2;
@@ -17,12 +18,8 @@ function soma(valor1,valor2){
 document.getElementById("texto1").innerHTML = ("A soma de 10 + 10 é igual a")
 document.getElementById("texto2").innerHTML = soma(10,10);
 
-//APLCIANDO O RESULTADO NO ALERTA DA PÁGINA
-var total = soma(10,23); //CHAMADA DA FUNÇÃO
-alert("A soma de 10 + 23 é igual a " + total)
 
-
-//EXEMPLO 02 - FUNÇÃO DE COTAÇÃO DO D[OLAR]
+//EXEMPLO 02 - FUNÇÃO DE COTAÇÃO DO DÓLAR]
 function realParaDolar (real, cotacaoDolar){
     return real * cotacaoDolar;
 }
@@ -35,3 +32,18 @@ var resultadoCotacao = realParaDolar(valorReal, cotacao)
 
 //MOSTRANDO O RESULTADO NO HTML
 alert("COTAÇÃO: O valor em real é de R$ " + valorReal + " e o valor em dólar é de U$ " + resultadoCotacao);
+
+
+//EXEMPLO 03 - INVOCANDO OUTRA FUNÇÃO POR MEIO DE UM CLIQUE
+function alertaHello(){
+    alert("Olá Pessoal!!!")
+}
+
+//EXEMPLO 04
+function paraCelsius(valorFahrenheit){
+    return (5/9) * (valorFahrenheit - 32);
+}
+
+var x = paraCelsius(77);
+
+alert("A temperatura é de " + x + " graus Celsius");
