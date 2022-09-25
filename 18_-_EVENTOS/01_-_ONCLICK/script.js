@@ -29,6 +29,8 @@ function evento_Click(){
     alert("ACIONANDO O EVENTO ONCLICK");
 
     document.body.style.backgroundColor = "orange";
+    natura.style.display = "block";
+    natura.style.margin = "auto";
     
 }
 

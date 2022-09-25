@@ -24,15 +24,15 @@ ONRESIZE -> Disparado quando há um redimencionamento da janela.
 
 */
 
-function evento_Ondblclick(){
+function vira_verde(){
 
-    alert("ACIONANDO O EVENTO ONDBLCLICK");
+    let div = document.getElementById("teste");
 
-    document.body.style.backgroundColor = " rgb(106, 203, 233)";
+    div.style.backgroundColor = "blue";
 
-    carrefour.style.display = "block";
+    tim.style.display = "block";
 
-    carrefour.style.margin = "auto";
+    tim.style.margin = "auto";
     
 }
 
