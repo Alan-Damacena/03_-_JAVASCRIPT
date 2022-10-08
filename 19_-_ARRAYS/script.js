@@ -17,11 +17,25 @@ E assim por diante.
                  //0      //1         //2       //3
 const lista = ["arroz", "feijão", "macarrão", "leite"];
 
+//Mudando item de uma array
+lista[0] = "café"
+
+//Adicionando um item ao final do array
+//lista[lista.length] = "FELIPE"
+
+//Descobrindo se determinada variável é ARRAY
+//Array.isArray(lista);
+
 let x = lista[3];
 
-alert(x)
+alert("O item 3 da lista é " + x);
+alert("O item 0 da lista é " + lista[0]);
+alert("A minha lista possui um total de " + lista.length + " itens!!!");
+alert("O último item da lista é " + lista[lista.length -1]);
+alert("Adicionado na lista o item " + lista.push("ALAN") + " , logo, o último item da lista é " + lista[lista.length -1])
 
-// TAMBÉM PODE SER DADO ASSIM: alert(lista[0]);
+console.log(lista);
+
 
 /* 
 
