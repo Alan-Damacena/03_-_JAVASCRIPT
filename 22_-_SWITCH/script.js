@@ -3,7 +3,8 @@
 É usado ara realizar diferentes ações com base em diferentes condições no mesmo bloco de verificação. Caso a condição não seja compatível nao será executada e o valor padrão será acionado. */
 
 function verificarCor(){
-    const cor = document.getElementById("cor").value;
+    let cor = document.getElementById("cor").value;
+    cor = cor.toLowerCase();
 
     switch (cor) {
 
