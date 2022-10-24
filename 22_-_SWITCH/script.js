@@ -4,7 +4,7 @@
 
 function verificarCor(){
     let cor = document.getElementById("cor").value;
-    cor = cor.toLowerCase();
+    cor = cor.toLowerCase(); //Dessa forma ele não faz diferença ao escrever com letras maiúsculas ou minúsculas
 
     switch (cor) {
 
