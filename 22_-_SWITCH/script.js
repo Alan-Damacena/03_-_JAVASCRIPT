@@ -31,3 +31,53 @@ function verificarCor(){
 
 }
 
+function DiaDaSemana(){
+   var dia = new Date().getDay();
+
+    console.log(dia);
+
+    switch (dia) {
+
+        case 0:
+            //o que acontece
+            document.getElementById("teste2").innerHTML = "Hoje é Domingo"
+            break;
+
+        case 1:
+            //o que acontece
+            document.getElementById("teste2").innerHTML = "Hoje é Segunda-Feira"
+            break;
+
+        case 2:
+            //o que acontece
+            document.getElementById("teste2").innerHTML = "Hoje é Terça-Feira"
+            break;
+        
+        case 3:
+            //o que acontece
+            document.getElementById("teste2").innerHTML = "Hoje é Quarta-Feira"
+            break;
+
+        case 4:
+            //o que acontece
+            document.getElementById("teste2").innerHTML = "Hoje é Quinta-Feira"
+            break;
+
+        case 5:
+            //o que acontece
+            document.getElementById("teste2").innerHTML = "Hoje é Sexta-Feira"
+            break;
+
+        case 6:
+            //o que acontece
+            document.getElementById("teste2").innerHTML = "Hoje é Sábado"
+            break;
+
+        default:
+            //o que acontece
+            document.getElementById("teste2").innerHTML = "NÃO SEI QUE DIA É !!!!"
+            break;
+    }
+
+}
+
