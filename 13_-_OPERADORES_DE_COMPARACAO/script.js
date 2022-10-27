@@ -1,6 +1,4 @@
-/*
-
-Os operadores Javascript são usados para atribuir valores, comparar valores, executar operações aritméticas e muito mais.
+/* Os operadores Javascript são usados para atribuir valores, comparar valores, executar operações aritméticas e muito mais.
 
 São os sinais que usamos: + - * / ++ -- += -= && || etc...
 
@@ -11,11 +9,9 @@ São separados em 6 categorias:
 3) Operadores de Sequência
 4) Operadores de Comparação
 5) Operador Condicional (Ternário)
-6) Operadores Lógicos
+6) Operadores Lógicos */
 
-*/
-
-var valor1, valor2, total, total2, total3, total4, total5, total6, total7, total8, total9;
+var valor1, valor2, valor3, valor4, total, total2, total3, total4, total5, total6, total7, total8, total9;
 
 valor1 = 8;
 valor2 = 10;
@@ -47,6 +43,7 @@ total8 = (valor2 <= valor3); //Pode retornar TRUE (verdadeiro) ou FALSE (falso)
 // >= MAIOR OU IGUAL QUE
 total9 = (valor2 >= valor3); //Pode retornar TRUE (verdadeiro) ou FALSE (falso)
 
+//RESULTADOS
 alert("8 É IGUAL A 10? " + total); //FALSE
 alert("10 É IGUAL A 10? " + total2); //TRUE
 alert(" (OITO) É IGUAL A 8? " + total3); //FALSE
