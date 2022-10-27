@@ -8,11 +8,9 @@ Os valores dentro de um objeto são chamados propriedades.
 
 Objetos também podem ter métodos.
 
-Um Método é uma função colocada dentro de uma propriedade.
+Um Método é uma função colocada dentro de uma propriedade. */
 
-*/
-
-//É UMA PRATRICA COMUM USAR A CONST PARA NÃO MUDAR O CONTEÚDO DE UM OBJETO
+//É UMA PRÁTICA COMUM USAR A CONST PARA NÃO MUDAR O CONTEÚDO DE UM OBJETO
 //OBJETO LITERAL: ONDE OS VALORES JÁ SÃO DETERMINADOS PARA ELE
 const carro = {
     marca:"ford",
@@ -28,14 +26,8 @@ const carro = {
     descricao: function(){
         return "o ano do carro é " + this.ano
     }
-
-
 };
 
 carro.completo()
 
 console.log(carro.descricao());
-
-
-
-
