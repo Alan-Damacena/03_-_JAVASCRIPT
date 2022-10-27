@@ -1,14 +1,12 @@
-/*
-Uma função Javascript é um bloco de código projetado para executar uma tarefa específica.
+/* Uma função Javascript é um bloco de código projetado para executar uma tarefa específica.
 
 É como uma pequena "fábrica" onde você faz uma entradae ele te dá uma saída.
 
 Pode ser encontrado como "mini-programas" projetados para fazer uma tarefa que vai contribuir para todo código.
 
-Uma função javascript é executada quando "algo" a invoca (chama-a).
-*/
+Uma função javascript é executada quando "algo" a invoca (chama-a). */
 
-//EXEMPLO01
+//EXEMPLO 01
 //DECLARANDO UMA FUNÇÃO DE SOMA
 function soma(valor1,valor2){
     return valor1 + valor2;
@@ -38,6 +36,7 @@ alert("COTAÇÃO: O valor em real é de R$ " + valorReal + " e o valor em dólar
 function alertaHello(){
     alert("Olá Pessoal!!!")
 }
+
 
 //EXEMPLO 04
 function paraCelsius(valorFahrenheit){
