@@ -1,0 +1,14 @@
+body{
+    text-align: center;
+}
+.start{
+    background: greenyellow;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.stop{
+    background: tomato;
+    font-size: 20px;
+    padding: 20px;
+}
