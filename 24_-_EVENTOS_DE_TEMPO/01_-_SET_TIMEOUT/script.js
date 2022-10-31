@@ -12,7 +12,10 @@ setInterval(function, milliseconds)
 
 function ativarContagem() {
         document.getElementById("tempo").innerHTML = "COMEÇOU A CONTAR!!!";
+
+        //ATIVA A FUNÇÃO APENAS 1 VEZ QUANDO DER O TEMPO DETERMINADO
         setTimeout(function () {
+            document.body.style.background = "red"
             document.getElementById("tempo").innerHTML = "EXECUTOU O SETTIMEOUT";
         }, 5000);
 }
