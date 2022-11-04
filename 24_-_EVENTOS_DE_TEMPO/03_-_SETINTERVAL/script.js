@@ -11,9 +11,13 @@ setInterval(function, milliseconds)
 -> É o mesmo que setTimeout(), mas repete a execução da função continuamente. */
 
 function ativarContagem(){
-    setInterval(function(){
+    tempo = setInterval(function(){
         let cronometro = document.getElementById("tempo").innerHTML;
         let soma = parseInt(cronometro) + 1;
         document.getElementById("tempo").innerHTML = soma;
     }, 1000);
+}
+
+function pararContagem(){
+   clearInterval(tempo)
 }
