@@ -7,3 +7,16 @@ Basicamente, as classes são como "fábricas" para criar objetos.
 Pode-se dizer que são "funções especiais" para criação de objetos.
 
 Assim como uma fábrica da vida real precisa das máquinas para construir os objetos, as Classes no Javascript usam um método chamado constructor() para fabricar os objetos. */
+
+//FEZ A FÁBRICA
+class Carro{
+    constructor(valor1,valor2,valor3){
+        this.marca = valor1;
+        this.modelo - valor2;
+        this.ano = valor3;
+    }
+}
+
+//CHAMA A CONSTRUÇÃO ATRÁVES DA FÁBRICA
+const uno = new Carro("Fiat", "Uno", 2001)
+console.log(uno)
