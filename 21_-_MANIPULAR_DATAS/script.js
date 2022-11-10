@@ -12,4 +12,23 @@ console.log(ano);
 let mes = data.getMonth();
 console.log(mes);
 
+//MOSTRAR O MÊS NO FORMATO ESCRITO
 const mesesDoAno = ["Janeiro","Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"];
+let mesEscrito = mesesDoAno[data.getMonth()];
+console.log(mesEscrito);
+
+//PEGAR O DIA DO MÊS - 1 ATÉ 31
+let diaMes = data.getDate();
+console.log(diaMes);
+
+//PEGAR O DIA DA SEMANA - 0 até 6
+let diaSemana = data.getDay();
+console.log(diaSemana);
+
+const diasDaSemana = ["Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado"]
+let diasSemanaEscrito = diasDaSemana[data.getDay()];
+console.log(diasSemanaEscrito);
+
+//PEGAR A HORA - DE 0 ATÉ 23
+let hora = data.getHours();
+console.log(hora);
