@@ -32,3 +32,31 @@ console.log(diasSemanaEscrito);
 //PEGAR A HORA - DE 0 ATÉ 23
 let hora = data.getHours();
 console.log(hora);
+
+//PEGAR OS MINUTOS - DE 0 ATÉ 59
+let minutos = data.getMinutes();
+console.log(minutos);
+
+//PEGAR SEGUNDOS - DE 0 ATÉ 59
+let segundos = data.getSeconds();
+console.log(segundos);
+
+//PEGAR MILISEGUNDOS - DE 0 ATÉ 999
+let milisegundos = data.getMilliseconds();
+console.log(milisegundos);
+
+//PEGAR A DATA DO PADRAO BRASILEIRO (DIA / MÊS / ANO)
+let dataBR = data.toLocaleString("pt-br");
+let dataBR1 = data.toLocaleString("pt-br",{ dateStyle: "short"});
+let dataBR2 = data.toLocaleString("pt-br",{ timeStyle: "short"});
+console.log(dataBR);
+console.log(dataBR1);
+console.log(dataBR2);
+
+//PEGAR OS VALORES SEPARADOS
+d = new Date();
+diaMes = d.getDate();
+mes = d.getMonth();
+ano = d.getFullYear();
+
+let dataPadraoBR
