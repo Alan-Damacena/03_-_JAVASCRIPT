@@ -56,7 +56,16 @@ console.log(dataBR2);
 //PEGAR OS VALORES SEPARADOS
 d = new Date();
 diaMes = d.getDate();
-mes = d.getMonth();
+mes = d.getMonth() + 1;
 ano = d.getFullYear();
 
-let dataPadraoBR
+function addZero(x) {return x<10 ? "0" + x : "" + x; }
+
+let dataPadraoBR = addZero(diaMes) + "/" + mes + "/" + ano;
+console.log(dataPadraoBR);
+
+//COMPARAR DATAS - MAIOR OU MENOR. EX: VENCIMENTOS 
+let hoje = new Date();
+let vencimento = new Date(2022, 11, 25)
+
+if(hoje > venc)
