@@ -68,4 +68,18 @@ console.log(dataPadraoBR);
 let hoje = new Date();
 let vencimento = new Date(2022, 11, 25)
 
-if(hoje > venc)
+if(hoje > vencimento){
+    console.log("Sua conta está vencida!!!");
+} else {
+    console.log("Ainda não venceu, tudo certo!!!");
+}
+
+//DIFERENÇA ENTRE DUAS DATAS (EM DIAS)
+var dataInicial = new Date();
+var dataFinal = new Date(2020, 11, 31);
+
+var diferencaTempo = dataFinal.getTime() - dataInicial.getTime();
+
+var diferencaDias = Math.ceil(diferencaTempo / (24 * 60 * 60 * 1000));
+
+console.log(diferencaDias + " DIAS DE DIFERENÇA");
