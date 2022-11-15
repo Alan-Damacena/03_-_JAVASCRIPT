@@ -15,15 +15,28 @@ JSON.stringify() => Converte objetos em texto padrão JSON */
 const carro = {
     marca: "Fiat",
     modelo: "Uno",
-    ano: 2001,
+    motor: ["1.6", "1.4", "1.0"],
 }
 
-//CONVERTEU O TEXTO JSON
+//CONVERTEU PARA TEXTO JSON
 let texto = JSON.stringify(carro);
 
-//COLOCOU O TEXTO NO NOSSO
+//COLOCOU O TEXTO NO NOSSO HTML
 document.getElementById("area").innerHTML = texto;
 
+//CONVERTEMOS TEXTO EM OBJETO
 let obj = JSON.parse(texto);
 
-console.log(obj.modelo);
+
+//PEGAMOS UM VALOR DESTE OBJETO
+console.log(obj.motor[2]);
+
+
+
+const ajax = XMLHttpRequest();
+ajax.open("GET", "https://viacep.com.br/ws/01001000/json/");
+ajax.send();
+
+ajax.onload = function(){
+    document.getElementById("area").innerHTML = this.responseText;
+}
