@@ -31,12 +31,17 @@ let obj = JSON.parse(texto);
 //PEGAMOS UM VALOR DESTE OBJETO
 console.log(obj.motor[2]);
 
+function buscarCEP(){
+    let input = document.getElementById("cep").value;
 
+    const ajax = new XMLHttpRequest();
+    ajax.open("GET", "https://viacep.com.br/ws/" + input + "/json/");
+    ajax.send();
 
-const ajax = XMLHttpRequest();
-ajax.open("GET", "https://viacep.com.br/ws/01001000/json/");
-ajax.send();
+    ajax.onload = function(){
+        document.getElementById("texto").innerHTML = this.responseText;
+        let obj = JSON.parse(this.responseText);
+        alert("DDD: " + obj.ddd)
+    }
 
-ajax.onload = function(){
-    document.getElementById("area").innerHTML = this.responseText;
 }
