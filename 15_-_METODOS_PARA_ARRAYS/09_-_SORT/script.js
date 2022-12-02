@@ -1,26 +1,11 @@
-/*
+const lista1 = [ " ovo", " feijão", " macarrão", " pimenta", " arroz"];
 
-ARRAYS
+const lista2 = [" arroz", " feijão", " macarrão", " ovo", " pimenta"];
 
-Os arrays JavaScript são usados para armazenar vários valores em uma única variável. Diferente dos objetos, que funcionam com propriedades ou "nomes" que você dá para os itens dentro dele, os arrays não possuem propriedades. O item dentro dele é encontrado pela posição.
+const alfabetica = lista1.sort();
 
-Imagine um array como uma lista de itens, com controle, por ordem de posição dentro dele.
+const decrescente = lista2.reverse();
 
-Ex: const lista = ["arroz","feijão","macarrão","leite"];
+document.getElementById("teste1").innerHTML = alfabetica;
 
-A lista[0] (lista na posição 0)
-A lista[1] (lista na posição 1)
-
-E assim por diante.
-
-*/
-                 //0      //1         //2       //3
-const lista = [" arroz", " feijão", " macarrão", " leite", " ovo", " acúcar", " pimenta"];
-
-const ordem = lista.sort();
-
-const ordem2 = lista.reverse();
-
-document.getElementById("teste").innerHTML = ordem;
-
-document.getElementById("teste2").innerHTML = ordem2;
+document.getElementById("teste2").innerHTML = decrescente;
